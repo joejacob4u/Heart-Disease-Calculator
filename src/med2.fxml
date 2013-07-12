@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="patPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="798.0" style="-fx-background-color:E0E0E0; -fx-border:10px solid red;" xmlns:fx="http://javafx.com/fxml" fx:controller="Med2Controller">
+  <children>
+    <Label layoutX="287.0" layoutY="66.0" prefWidth="320.0" text="Describe patients heart condition" textFill="#cc0000" underline="true">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Label>
+    <TextArea fx:id="patientAbs" layoutX="228.0" layoutY="148.0" prefWidth="402.0" wrapText="true" />
+    <Label fx:id="tipLabel" layoutX="181.0" layoutY="312.0" prefWidth="402.0" />
+    <Button fx:id="patUpload" layoutX="240.0" layoutY="369.0" mnemonicParsing="false" prefWidth="298.0" style="-fx-background-color:&#10;        linear-gradient(#f0ff35, #a9ff00),&#10;        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);&#10;    -fx-background-radius: 6, 5;&#10;    -fx-background-insets: 0, 1;&#10;    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );&#10;    -fx-text-fill: #395306;" text="Upload!" />
+    <Label fx:id="patLabel" labelFor="$patLabel" layoutX="228.0" layoutY="125.0" prefWidth="437.0" text="Enter your text:" />
+    <ProgressIndicator fx:id="pi" layoutX="372.0" layoutY="401.0" progress="0.0" />
+    <Button fx:id="file" layoutX="655.0" layoutY="179.0" mnemonicParsing="false" prefWidth="117.0" text="Or select file" />
+    <Button fx:id="Camera" layoutX="655.0" layoutY="258.0" mnemonicParsing="false" prefWidth="117.0" text="Start Camera" />
+    <ImageView fx:id="Holder" fitHeight="120.24980081787362" fitWidth="160.33305758464724" layoutX="14.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml" fx:controller="Med1Controller">
+  <children>
+    <SplitPane dividerPositions="0.19732441471571907" focusTraversable="true" orientation="VERTICAL" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <ImageView fitHeight="115.0" fitWidth="798.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@title.png" preserveRatio="false" smooth="false" />
+              </image>
+            </ImageView>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <TabPane prefHeight="477.0" prefWidth="798.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <stylesheets>
+                <URL value="@../../../../../Desktop/button.css" />
+              </stylesheets>
+              <tabs>
+                <Tab fx:id="tab1" style=".tab1.focus:{border:red;}" text="                                  Doctors                                             ">
+                  <content>
+                    <AnchorPane fx:id="bp" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color:E0E0E0; -fx-border:10px solid red;&#10;" styleClass="null">
+                      <children>
+                        <Label layoutX="338.0" layoutY="221.0" prefWidth="174.0" text="Username" textOverrun="CLIP" underline="true">
+                          <font>
+                            <Font name="System Bold" size="18.0" fx:id="x2" />
+                          </font>
+                          <textFill>
+                            <Color blue="0.000" green="0.000" red="0.800" fx:id="x1" />
+                          </textFill>
+                        </Label>
+                        <TextField id="hospname" fx:id="username" layoutX="286.0" layoutY="258.0" prefWidth="226.0" style="-fx-border:2px solid red;" />
+                        <Label layoutX="338.0" layoutY="301.0" prefWidth="137.0" text="Password" textFill="$x1" underline="true">
+                          <font>
+                            <Font name="System Bold" size="17.0" />
+                          </font>
+                        </Label>
+                        <Button id="patVerify" fx:id="docVerify" layoutX="286.0" layoutY="384.0" mnemonicParsing="false" prefWidth="226.0" style="-fx-background-color:&#10;        linear-gradient(#f0ff35, #a9ff00),&#10;        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);&#10;    -fx-background-radius: 6, 5;&#10;    -fx-background-insets: 0, 1;&#10;    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );&#10;    -fx-text-fill: #395306;" text="Verify" textFill="RED" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="316.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@doctor.png" preserveRatio="false" smooth="false" />
+                          </image>
+                        </ImageView>
+                        <PasswordField fx:id="password" layoutX="286.0" layoutY="339.0" prefWidth="226.0" />
+                      </children>
+                      <stylesheets>
+                        <URL value="@../../../../../Desktop/button.css" />
+                      </stylesheets>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab style=".tabchat:selected{background-color:red;}" text="                                Patients                                              ">
+                  <content>
+                    <AnchorPane id="Content" fx:id="dp" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color:E0E0E0; -fx-border:10px solid red;&#10;">
+                      <children>
+                        <Label font="$x2" layoutX="366.0" layoutY="199.0" prefWidth="182.0" text="Hospital" textFill="$x1" underline="true" />
+                        <TextField fx:id="hospname" layoutX="299.0" layoutY="239.0" prefWidth="222.0" />
+                        <Label font="$x2" layoutX="374.0" layoutY="270.0" prefWidth="94.0" text="Id No" textFill="$x1" underline="true" />
+                        <PasswordField fx:id="docketno" layoutX="299.0" layoutY="308.0" prefWidth="222.0" />
+                        <Button fx:id="patVerify" layoutX="299.0" layoutY="354.0" mnemonicParsing="false" prefWidth="222.0" style="-fx-background-color:&#10;        linear-gradient(#f0ff35, #a9ff00),&#10;        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);&#10;    -fx-background-radius: 6, 5;&#10;    -fx-background-insets: 0, 1;&#10;    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );&#10;    -fx-text-fill: #395306;" text="Verify" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="335.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@patient.png" preserveRatio="false" smooth="false" />
+                          </image>
+                        </ImageView>
+                        <Label layoutX="30.0" layoutY="26.0" prefWidth="189.0" text="Login to access the database" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>

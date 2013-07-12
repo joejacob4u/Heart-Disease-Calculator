@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="med3pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.99980000000505" prefWidth="896.0" style="-fx-background-color:E0E0E0; -fx-border:10px solid red" xmlns:fx="http://javafx.com/fxml" fx:controller="Med3Controller">
+  <children>
+    <Label layoutX="264.0" layoutY="67.0" text="Describe your heart condition" textFill="#cc0000" underline="true">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Label>
+    <TextArea fx:id="patAbs" layoutX="210.0" layoutY="138.0" prefWidth="385.0" wrapText="true" />
+    <Label id="docTip" fx:id="patTip" layoutX="210.0" layoutY="325.0" prefWidth="428.0" />
+    <Button fx:id="docButton" layoutX="210.0" layoutY="375.0" mnemonicParsing="false" prefWidth="385.0" style="-fx-background-color:&#10;        linear-gradient(#f0ff35, #a9ff00),&#10;        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);&#10;    -fx-background-radius: 6, 5;&#10;    -fx-background-insets: 0, 1;&#10;    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );&#10;    -fx-text-fill: #395306;" text="Upload!" />
+  </children>
+</AnchorPane>

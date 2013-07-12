@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Sun May 26 22:31:26 IST 2013
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=MedAbstract_fat.jar
+manifest.mergeall=true
+manifest.mainclass=Start
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

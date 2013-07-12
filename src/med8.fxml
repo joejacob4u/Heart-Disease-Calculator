@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="goodpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="896.0" style="-fx-background-color:E0E0E0; -fx-border:10px solid red" xmlns:fx="http://javafx.com/fxml" fx:controller="Med8Controller">
+  <children>
+    <Label layoutX="394.0" layoutY="67.0" prefWidth="108.0" text="Result" textFill="RED" underline="true">
+      <font>
+        <Font name="System Bold" size="20.0" />
+      </font>
+    </Label>
+    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="344.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@check.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <Label layoutX="200.0" layoutY="330.0" text="Looks like you are OK but we still recommend you see a doctor for checkup." textFill="#0c9900">
+      <font>
+        <Font name="System Bold" size="13.0" />
+      </font>
+    </Label>
+    <Button fx:id="newbutton" layoutX="407.0" layoutY="383.0" mnemonicParsing="false" text="New" />
+  </children>
+</AnchorPane>

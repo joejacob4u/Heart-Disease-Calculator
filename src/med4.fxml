@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <SplitPane dividerPositions="0.19732441471571907" focusTraversable="true" orientation="VERTICAL" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <ImageView fitHeight="115.0" fitWidth="798.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../../../../Desktop/title.png" preserveRatio="false" smooth="false" />
+              </image>
+            </ImageView>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <TabPane prefHeight="477.0" prefWidth="798.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <stylesheets>
+                <URL value="@../../../../../Desktop/button.css" />
+              </stylesheets>
+              <tabs>
+                <Tab fx:id="tab1" style=".tab1.focus:{border:red;}" text="                                  Patients                                            ">
+                  <content>
+                    <AnchorPane fx:id="bp" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color:E0E0E0; -fx-border:10px solid red;&#10;" styleClass="">
+                      <children>
+                        <Label layoutX="314.0" layoutY="116.0" prefWidth="174.0" text="Hospital Name" textOverrun="CLIP" underline="true">
+                          <font>
+                            <Font name="System Bold" size="18.0" fx:id="x2" />
+                          </font>
+                          <textFill>
+                            <Color blue="0.000" green="0.000" red="0.800" fx:id="x1" />
+                          </textFill>
+                        </Label>
+                        <TextField fx:id="hospname" layoutX="288.0" layoutY="161.0" prefWidth="200.0" style="-fx-border:2px solid red;" />
+                        <Label layoutX="314.0" layoutY="210.0" prefWidth="137.0" text="Docket Number" textFill="$x1" underline="true">
+                          <font>
+                            <Font name="System Bold" size="17.0" />
+                          </font>
+                        </Label>
+                        <TextField layoutX="288.0" layoutY="252.0" prefWidth="200.0" />
+                        <Button layoutX="288.0" layoutY="309.0" mnemonicParsing="false" prefWidth="200.0" style="-fx-background-color:&#10;        linear-gradient(#f0ff35, #a9ff00),&#10;        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);&#10;    -fx-background-radius: 6, 5;&#10;    -fx-background-insets: 0, 1;&#10;    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );&#10;    -fx-text-fill: #395306;" text="Verify" textFill="RED" />
+                      </children>
+                      <stylesheets>
+                        <URL value="@../../../../../Desktop/button.css" />
+                      </stylesheets>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab style=".tabchat:selected{background-color:red;}" text="                                Doctors                                                   ">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color:E0E0E0; -fx-border:10px solid red;&#10;">
+                      <children>
+                        <Label font="$x2" layoutX="321.0" layoutY="125.0" prefWidth="182.0" text="Username" textFill="$x1" underline="true" />
+                        <TextField layoutX="283.0" layoutY="172.0" prefWidth="200.0" />
+                        <Label font="$x2" layoutX="321.0" layoutY="205.0" prefWidth="94.0" text="Password" textFill="$x1" underline="true" />
+                        <PasswordField layoutX="283.0" layoutY="251.0" prefWidth="200.0" />
+                        <Button layoutX="283.0" layoutY="312.0" mnemonicParsing="false" prefWidth="200.0" style="-fx-background-color:&#10;        linear-gradient(#f0ff35, #a9ff00),&#10;        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);&#10;    -fx-background-radius: 6, 5;&#10;    -fx-background-insets: 0, 1;&#10;    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );&#10;    -fx-text-fill: #395306;" text="Verify" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>
